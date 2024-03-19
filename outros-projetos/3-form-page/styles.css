@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --fonteKhand: "Khand", sans-serif;
+}
+
+* {
+    margin: 0%;
+}
+
+body {
+    background-image: url(bg2.png);
+    margin: 0%;
+    font-family: var(--fonteKhand);
+    color: white;
+}
+
+main {
+    margin: 84px 495px;
+    height: 940px;
+    width: 989px;
+    border: 4px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+
+select {
+    background-color: rgba(0, 0, 0, 0.0);
+    font-family: var(--fonteKhand);
+    font-size: 15px;
+    border: 0 none;
+    outline: 0;
+    border-bottom: 5px;
+    border-color: #FFFFFF;
+    border-style: solid;
+    color: #FFFFFF;
+}
+
+select:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0.0);
+    font-family: var(--fonteKhand);
+    font-size: 20px;
+    border: 0 none;
+    outline: 0;
+    border-bottom: 5px;
+    border-color: #FFFFFF;
+    border-style: solid;
+    color: #FFFFFF;
+}
+
+.apresentacao__texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 27px;
+}
+
+.apresentacao__texto__titulo {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.apresentacao__texto__subtitulo {
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0%;
+}
+
+.apresentacao__campo {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    margin-left: 62px;
+    margin-right: 62px;
+    font-size: 32px;
+}
+
+.apresentacao__campo__nome__caixa {
+    width: 373px;
+    height: 26px;
+}
+
+.legenda {
+    font-size: 16px;
+}
+
+.caixaNomes {
+    display: flex;
+    gap: 100px;
+}
+
+.apresentacao__campo__caixa {
+    width: 847px;
+    height: 26px;
+}
+
+.botao {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.botao__filho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 398px;
+    height: 72px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    text-decoration: none;
+    color: #000000;
+    font-family: var(--fonteKhand);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.botao__filho:hover {
+    background-color: #FFFFFF;
+}

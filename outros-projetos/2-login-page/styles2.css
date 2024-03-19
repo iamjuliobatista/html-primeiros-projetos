@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Julius+Sans+One&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --fonteKarla: "Karla", sans-serif;
+    --fonteJulius: "Julius Sans One", sans-serif;
+    --fonteJua: "Jua", sans-serif;
+    --corRoxa: #AAAAFF;
+    --corRoxaEsc: #3f3f9b;
+    --corBranca: #FFFFFF;
+}
+
+body {
+    background-image: url(background2.png);
+    margin: 0%;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-left: 104px;
+    margin-bottom: 54px;
+    margin-right: 70px;
+}
+
+.conteudo__imagem {
+    display: flex;
+    align-items: flex-end;
+}
+
+.conteudo__imagem__study {
+    height: 512px;
+}
+
+.conteudo__apresentacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo__apresentacao__main {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 76px;
+}
+
+.conteudo__apresentacao__textopai {
+    gap: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo__apresentacao__imagem {
+    height: 162px;
+    width: 162px;
+}
+
+.conteudo__apresentacao__texto {
+    font-family: var(--fonteJulius);
+    font-size: 60px;
+    color: var(--corRoxa);
+    margin: 0%;
+}
+
+.conteudo__apresentacao__textoP {
+    font-family: var(--fonteKarla);
+    margin: 0%;
+    font-size: 32px;
+    color: var(--corRoxa);
+    text-decoration: underline;
+}
+
+.conteudo__inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 41px;
+    width: 1000px;
+}
+
+.conteudo__inputs__caixa {
+    font-family: var(--fonteKarla);
+    font-size: 32px;
+    border: 5px;
+    border-radius: 20px;
+    border-color: var(--corRoxa);
+    border-style: solid;
+    color: var(--corRoxa);
+    width: 449px;
+    height: 76px;
+}
+
+.conteudo__inputs__caixa::placeholder {
+    color: var(--corRoxa);
+}
+
+.conteudo__apresentacao__botaoEntrar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 427px;
+    height: 78px;
+    border-radius: 50px;
+    background-color: var(--corRoxa);
+    text-decoration: none;
+    font-family: var(--fonteJua);
+    color: var(--corBranca);
+    font-size: 48px;
+}
+
+.conteudo__apresentacao__botaoEntrar:hover {
+    background-color: var(--corRoxaEsc);
+}

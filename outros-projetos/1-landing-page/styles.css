@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --fonteJua: "Jua", sans-serif;
+    --fonteKalam: "Kalam", cursive;
+    --fonteKod: "Kodchasan", sans-serif;
+    --corBackground: #004225;
+    --corClara: #F5F5DC;
+    --corClaraM: #FFCF9D;
+    --corAmarelo: #FFB000;
+}
+
+body {
+    background-color: var(--corBackground);
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.cabecalho__marca {
+    display: flex;
+    gap: 16px;
+}
+
+.cabecalho__marca__icone {
+    margin-top: 20%;
+    height: 4rem;
+}
+
+.cabecalho__marca__texto {
+    margin-top: 25%;
+    margin-bottom: 0%;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: var(--fonteKalam);
+    color: var(--corClara);
+}
+
+.cabecalho__navegacao {
+    display: flex;
+    gap: 66px;
+    align-items: center;
+}
+
+.cabecalho__navegacao__botao {
+    margin-top: 10%;
+    text-decoration: none;
+    font-family: var(--fonteJua);
+    font-size: 1.5rem;
+    color: var(--corClara);
+}
+
+.cabecalho__login {
+    display: flex;
+    gap: 99px;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.cabecalho__login__entrar {
+    text-decoration: none;
+    font-family: var(--fonteJua);
+    font-size: 1.5rem;
+    color: var(--corClaraM);
+}
+
+.cabecalho__login__cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: var(--fonteJua);
+    font-size: 1.5rem;
+    color: var(--corBackground);
+    height: 73%;
+    width: 10rem;
+    background-color: var(--corAmarelo);
+}
+
+.conteudo {
+    width: auto;
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 6%; /* altura do rodapé */
+}
+
+.conteudo__texto__titulo {
+    width: 90%;
+    font-family: var(--fonteKod);
+    color: var(--corAmarelo);
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 4%;
+}
+
+.conteudo__texto__paragrafo {
+    width: 90%;
+    font-family: var(--fonteKod);
+    color: var(--corClara);
+    font-size: 1.5rem;
+    margin-bottom: 7%;
+}
+
+.conteudo__texto__newsletter {
+    display: flex;
+    gap: 36px;
+}
+
+.conteudo__texto__newsletter__campo {
+    width: 32%;
+    height: 4.75rem;
+    font-size: 1.5rem;
+    font-family: var(--fonteKod);
+    font-weight: 600;
+    background-color: var(--corClara);
+}
+
+.conteudo__texto__newsletter__botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 4.75rem;
+    background-color: var(--corAmarelo);
+    text-decoration: none;
+    color: var(--corBackground);
+    font-weight: 600;
+    font-family: var(--fonteKod);
+    font-size: 1.5rem;
+}
+
+.conteudo__imagem {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape {
+    text-align: center;
+    font-family: var(--fonteKod);
+    font-size: 4rem;
+    color: var(--corClara);
+    font-weight: bold;
+}
+
+
+
+.cabecalho__login__cadastro:hover {
+    background-color: var(--corClaraM);
+}
+
+.cabecalho__login__entrar:hover {
+    color: var(--corAmarelo);
+}
+
+.cabecalho__navegacao__botao:hover {
+    color: var(--corAmarelo);
+}
+
+.conteudo__texto__newsletter__botao:hover {
+    background-color: var(--corClaraM);
+}
+
+@media(max-width: 1300px) {
+    body {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .conteudo {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .conteudo__imagem {
+        width: 70%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+    }
+
+    .conteudo__texto__newsletter__campo {
+        width: 45%;
+    }
+    
+    .conteudo__texto__newsletter__botao {
+        width: 45%;
+    }
+
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .cabecalho__navegacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

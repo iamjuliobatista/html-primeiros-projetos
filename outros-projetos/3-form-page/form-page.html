@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 3 - Form Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header></header>
+    <main class="apresentacao">
+
+        <div class="apresentacao__texto">
+            <h1 class="apresentacao__texto__titulo">Confirme sua presenca no evento</h1>
+            <h2 class="apresentacao__texto__subtitulo">As vagas são limitadas, não perca tempo!</h2>
+        </div>
+
+        <div class="apresentacao__campo">
+            
+
+            <div class="apresentacao__campo__nome">
+                <p>Nome</p>
+                <div class="caixaNomes">
+                    <div class="apresentacao__campo__nome__nome">
+                        <input class="apresentacao__campo__nome__caixa" type="text">
+                        <p class="legenda">Nome</p>   
+                    </div>
+                    
+                    <div class="apresentacao__campo__nome__sobrenome">
+                        <input class="apresentacao__campo__nome__caixa" type="text">
+                        <p class="legenda">Sobrenome</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="apresentacao__campo__email">
+                <p>Email</p>
+                <input class="apresentacao__campo__caixa" type="email">
+            </div>
+
+            <div class="apresentacao__campo__celular">
+                <p>Celular</p>
+                <input class="apresentacao__campo__caixa" type="number">
+            </div>
+
+            <div class="apresentacao__campo__cursoDesejado">
+                <p>Curso desejado</p>
+                <select class="apresentacao__campo__caixa" onchange="">
+                    <option selected>-Selecione-</option>
+                    <option value=1>Curso 1</option>
+                    <option value=2>Curso 2</option>
+                    <option value=3>Curso 3</option>
+                    <option value=4>Curso 4</option>
+                </select>
+            </div>
+
+            <div class="apresentacao__campo__escolherDia">
+                <p>Escolha o dia</p>
+                <select class="apresentacao__campo__caixa" onchange="">
+                    <option selected>-Selecione-</option>
+                    <option value=1>Segunda Feira</option>
+                    <option value=2>Quarta Feira</option>
+                    <option value=3>Sábado</option>
+                </select>
+            </div>
+        </div>
+        <div class="botao">
+            <a class="botao__filho" href="form-page.html">Confirmar minha presença</a>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

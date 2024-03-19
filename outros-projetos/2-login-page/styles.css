@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Julius+Sans+One&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --fonteKarla: "Karla", sans-serif;
+    --fonteJulius: "Julius Sans One", sans-serif;
+    --fonteJua: "Jua", sans-serif;
+    --corRoxa: #AAAAFF;
+    --corRoxaEsc: #3f3f9b;
+    --corBranca: #FFFFFF;
+}
+
+body {
+    background-image: url(background.png);
+    margin: 0%;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-left: 70px;
+    margin-bottom: 54px;
+    margin-right: 224px;
+}
+
+.conteudo__imagem {
+    display: flex;
+    align-items: flex-end;
+}
+
+.conteudo__imagem__study {
+    height: 512px;
+}
+
+.conteudo__apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo__apresentacao__imagem {
+    height: 153px;
+    width: 153px;
+    margin-bottom: 44px;
+}
+
+.conteudo__apresentacao__texto {
+    font-family: var(--fonteJulius);
+    font-size: 60px;
+    color: var(--corRoxa);
+    margin: 0%;
+}
+
+.conteudo__apresentacao__inputs {
+    display: flex;
+    flex-direction: column;
+    width: 427px;
+}
+
+.conteudo__apresentacao__inputs__email {
+    margin-top: 45px;
+    margin-bottom: 49px;
+    font-family: var(--fonteKarla);
+    font-size: 32px;
+    border: 0 none;
+    outline: 0;
+    border-bottom: 5px;
+    border-color: var(--corRoxa);
+    border-style: solid;
+    color: var(--corRoxa);
+}
+
+.conteudo__apresentacao__inputs__email::placeholder {
+    color: var(--corRoxa);
+}
+
+.conteudo__apresentacao__inputs__senha {
+    font-family: var(--fonteKarla);
+    font-size: 32px;
+    margin-bottom: 11px;
+    border: 0 none;
+    outline: 0;
+    border-bottom: 5px;
+    border-color: var(--corRoxa);
+    border-style: solid;
+    color: var(--corRoxa);
+}
+
+.conteudo__apresentacao__inputs__senha::placeholder {
+    color: var(--corRoxa);
+}
+
+.conteudo__apresentacao__inputs__botao {
+    display: flex;
+    justify-content: end;
+}
+
+.conteudo__apresentacao__inputs__botao__esqueceu {
+    text-decoration: none;
+    font-family: var(--fonteKarla);
+    font-size: 20px;
+    color: var(--corRoxa);
+}
+
+.conteudo__apresentacao__inputs__botao__esqueceu:hover {
+    color: var(--corRoxaEsc);
+}
+
+.conteudo__apresentacao__botaoEntrar {
+    margin-top: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 427px;
+    height: 78px;
+    border-radius: 50px;
+    background-color: var(--corRoxa);
+    text-decoration: none;
+    font-family: var(--fonteJua);
+    color: var(--corBranca);
+    font-size: 48px;
+}
+
+.conteudo__apresentacao__botaoEntrar:hover {
+    background-color: var(--corRoxaEsc);
+}
+
+.conteudo__apresentacao__botaoCriar {
+    margin-top: 48px;
+    display: flex;
+    gap: 45px;
+    justify-content: center;
+}
+
+.conteudo__apresentacao__botaoCriar__texto {
+    margin: 0;
+    font-family: var(--fonteKarla);
+    color: var(--corRoxa);
+    font-size: 24px;
+}
+
+.conteudo__apresentacao__botaoCriar__link {
+    font-family: var(--fonteKarla);
+    color: var(--corRoxa);
+    font-size: 24px;
+}
+
+.conteudo__apresentacao__botaoCriar__link:hover {
+    color: var(--corRoxaEsc);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Vendas</title>
+    <link rel="stylesheet" href="./styles/combustivel.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__link">
+            <a class="cabecalho__link__botao" href="index.html">Inicio</a>
+            <a class="cabecalho__link__botao" href="./sobre-mim.html">Sobre mim</a>
+            <a class="cabecalho__link__botao" href="https://www.linkedin.com/in/juliobatistab/">Contato</a>
+        </nav>
+    </header>
+    <main class="conteudo">
+            <div class="container1">
+                <h1 class="container1__titulo">Calculadora de Vendas</h1>
+                <p class="container1__paragrafo">Para ter uma estimativa mensal e anual de seus ganhos, voce precisara fornecer os dados de:</p>
+                <label>Valor do Produto:</label>
+                <input class="container1__campos" type="number" id="um">
+
+                <label>Média semanal de itens vendidos:</label>
+                <input class="container1__campos" type="number" id="dois">
+
+                <div class="container1__acao">
+                    <button class="container1__acao__botoes" onclick="calculo()">Calcular</button>
+                    <button class="container1__acao__botoes" onclick="limpar()">Limpar</button>
+                </div>
+
+                <h2 id="infoMensal">A média mensal será de: R$ 0.00</h2>
+                <h2 id="infoAnual">A estimativa anual será de: R$ 0.00</h2>
+            </div>
+            
+
+            <img class="conteudo__imagem" src="./assets/auton.png" alt="bomba-de-combustivel">
+            
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Julio Batista Braga - 2024</p>
+    </footer>
+
+    <script src="./js-files/vendas.js" defer></script>
+    
+</body>
+</html>

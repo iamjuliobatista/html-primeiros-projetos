@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Combustivel</title>
+    <link rel="stylesheet" href="./styles/combustivel.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__link">
+            <a class="cabecalho__link__botao" href="index.html">Inicio</a>
+            <a class="cabecalho__link__botao" href="./sobre-mim.html">Sobre mim</a>
+            <a class="cabecalho__link__botao" href="https://www.linkedin.com/in/juliobatistab/">Contato</a>
+        </nav>
+    </header>
+    <main class="conteudo">
+            <div class="container1">
+                <h1 class="container1__titulo">Calculadora de Combustivel</h1>
+                <p class="container1__paragrafo">Para descobrir quanto será necessário abastecer para fazer determinado trajeto, voce precisara fornecer os dados de:</p>
+                <label>Valor do combustivel (por litro);</label>
+                <input class="container1__campos" type="number" id="um">
+
+                <label>Distancia do trajeto (em quilometros);</label>
+                <input class="container1__campos" type="number" id="dois">
+
+                <label>Autonomia do veiculo (em quilometros):</label>
+                <input class="container1__campos" type="number" id="tres">
+                <div class="container1__acao">
+                    <button class="container1__acao__botoes" onclick="calculo()">Calcular</button>
+                    <button class="container1__acao__botoes" onclick="limpar()">Limpar</button>
+                </div>
+
+                <h2>Voce precisara abastecer: R$ 0.00</h2>
+            </div>
+            
+
+            <img class="conteudo__imagem" src="./assets/gaso.png" alt="bomba-de-combustivel">
+            
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Julio Batista Braga - 2024</p>
+    </footer>
+
+    <script src="./js-files/combustivel.js" defer></script>
+    
+</body>
+</html>
